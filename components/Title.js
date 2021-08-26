@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import styles from '../styles/Home.module.css'
+import { name, subHeader } from "./data"
 
 const fadeInDown = {
     initial: {
@@ -43,15 +44,15 @@ const stagger = {
     }
 }
 
-export const Title = props => {
+export const Title = () => {
     return (
-        <motion.div initial='initial' animate='animate' className={styles.children}>
-            <motion.div variants={stagger} className={styles.title}>
+        <motion.div initial='initial' animate='animate' className={styles.title}>
+            <motion.div variants={stagger} className={styles.title_content}>
                 <motion.div variants={fadeInDown}>
-                    <p className={styles.name}>Venkat Suprabath Bitra</p>
+                    <p className={styles.name}>{name}</p>
                 </motion.div>
                 <motion.div variants={fadeInUp}>
-                    <p className={styles.sub}>Student, IIITB</p>
+                    <p className={styles.sub}>{subHeader}</p>
                 </motion.div>
             </motion.div>
         </motion.div>

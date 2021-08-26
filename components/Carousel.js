@@ -15,24 +15,6 @@ const btnAnimation = {
 }
 
 export const Carousel = props => {
-    const hobbyData = [
-        {
-            title: 'Tic Tac Toe',
-            body: 'A Tic-Tac-Toe game made for two player, random computer based or a Min-Max player.'
-        },
-        {
-            title: 'Title',
-            body: 'Body'
-        },
-        {
-            title: 'Title2',
-            body: 'Body'
-        },
-        {
-            title: 'Title3',
-            body: 'Body'
-        }
-    ]
     const [id, setID] = React.useState(0)
     const [dir, setDir] = React.useState(false)
     return (
@@ -40,7 +22,7 @@ export const Carousel = props => {
             <motion.div 
                 className={`${styles["carousel__button"]} ${styles["carousel__button--left"]}`}
                 onClick={() => {
-                    setID((id - 1 + hobbyData.length) % hobbyData.length)
+                    setID((id - 1 + props.data.length) % props.data.length)
                     setDir(true)
                 }}
                 variants={btnAnimation}
@@ -50,12 +32,12 @@ export const Carousel = props => {
                 <Image src="/left.svg" width="100%" height="100%" />
             </motion.div>
             <motion.div className={styles["carousel__track-container"]}>
-                <Card title={hobbyData[id].title} body={hobbyData[id].body} key={id} dir={dir} />
+                <Card title={props.data[id].title} body={props.data[id].body} key={id} dir={dir} />
             </motion.div>
             <motion.div 
                 className={`${styles["carousel__button"]} ${styles["carousel__button--right"]}`}
                 onClick={() => {
-                    setID((id + 1) % hobbyData.length)
+                    setID((id + 1) % props.data.length)
                     setDir(false)
                 }}
                 variants={btnAnimation}

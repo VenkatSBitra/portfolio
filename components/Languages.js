@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion"
 import styles from '../styles/Home.module.css'
 import { useEffect } from "react";
-
+import { languages, language_icons } from "./data";
 import { useInView } from "react-intersection-observer";
 import { Language } from "./Language";
 
@@ -47,9 +47,6 @@ const stagger = {
     }
 }
 
-const lang = ["C", "C++", "Java", "Python", "Javascript", "Typescript", "C#", "R", "MATLAB", "Dart", "React", "Flutter", "Unity", "Phaser", "Django", "Flask"]
-const lang_icon = ["c", "c++", "java", "python", "js", "ts", "c-sharp", "R", "matlab", "dart", "react", "flutter", "unity", "phaser", "django", "flask"]
-
 export const Languages = props => {
     const controls = useAnimation();
     const [ref, inView] = useInView();
@@ -72,10 +69,10 @@ export const Languages = props => {
                 </motion.div>
                 <motion.div className={styles.vline} ref={ref} />
                 <motion.div className={styles.lang__right} variants={fadeInLeft}>
-                    {lang &&
+                    {languages &&
                         <motion.div className={styles.lang__right__ele} variants={stagger}>
-                            {lang.map((e, i) => (
-                                <Language variants={fadeInLeft} src={"/languages/" + lang_icon[i] + ".svg"} title={e} key={"lang_" + e} />
+                            {languages.map((e, i) => (
+                                <Language variants={fadeInLeft} src={"/languages/" + language_icons[i] + ".svg"} title={e} key={"lang_" + e} />
                             ))}
                         </motion.div>
                     }

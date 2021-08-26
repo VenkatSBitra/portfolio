@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion"
 import styles from '../styles/Home.module.css'
 import { useEffect } from "react";
-
+import { aboutMeText } from "./data";
 import { useInView } from "react-intersection-observer";
 
 const fadeInLeft = {
@@ -46,7 +46,7 @@ const stagger = {
     }
 }
 
-export const About = props => {
+export const About = () => {
     const controls = useAnimation();
     const [ref, inView] = useInView();
 
@@ -64,7 +64,9 @@ export const About = props => {
         >
             <motion.div variants={stagger} className={styles.about_lang_box}>
                 <motion.div className={styles.about__left} variants={fadeInRight}>
-                    <p className={styles.name}>About me... Some Text</p>
+                    {aboutMeText.map((e, i) => (
+                        <p key={i}>{e}</p>
+                    ))}
                 </motion.div>
                 <motion.div className={styles.vline} ref={ref} />
                 <motion.div className={styles.about__right} variants={fadeInLeft}>
