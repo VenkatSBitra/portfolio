@@ -21,7 +21,7 @@ export const Card = props => {
                     {console.log(props.linkText)}
                     {props.linkText &&
                         <p>
-                            <a href={props.link} target="_blank">{props.linkText}</a>
+                            <a href={props.link} rel="noreferrer" target="_blank">{props.linkText}</a>
                         </p>
                     }
                 </motion.div>
