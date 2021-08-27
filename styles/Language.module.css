@@ -3,3 +3,7 @@
     flex-direction: column;
     margin: 15px;
 }
+
+.win .main {
+    margin: 11.25px;
+}
