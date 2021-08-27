@@ -19,24 +19,37 @@
 }
 
 .card-body {
-    width: 60%;
+    width: 100%;
     height: 75%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-body-content {
+    width: 60%;
+    height: 100%;
     padding: 20px;
     font-size: 30px;
     position: relative;
+    display: flex;
+    flex-direction: column;
     border: 1px solid black;
 }
 
 .card-body p {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    margin: 0;
-    text-align: center;
+    margin: auto 7%;
+    text-align: justify;
+    align-content: center;
+    justify-content: center;
 }
 
 .card-image {
     width: 40%;
-    height: 75%;
+    height: 100%;
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
 }

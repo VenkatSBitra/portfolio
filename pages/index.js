@@ -3,7 +3,7 @@ import { About } from '../components/About'
 import { Languages } from '../components/Languages'
 import React from 'react'
 import { Projects } from '../components/Projects'
-
+import styles from '../styles/Home.module.css'
 import { hobbyData, workData } from "../components/data";
 
 export default function Home() {
@@ -25,9 +25,9 @@ export default function Home() {
                 <Projects title="Work Projects" data={workData} />
             </section>
             <section>
-                <footer>
+                <div className={styles.footer}>
                     Made using Next.js and Framer Motion
-                </footer>
+                </div>
             </section>
         </>
     )

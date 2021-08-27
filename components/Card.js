@@ -14,12 +14,20 @@ export const Card = props => {
                 {props.title}
             </motion.div>
             <motion.div className={styles["card-body"]}>
-                <p>
-                    {props.body}
-                </p>
-            </motion.div>
-            <motion.div className={styles["card-image"]}>
-                {props.image}
+                <motion.div className={styles["card-body-content"]}>
+                    <p>
+                        {props.body}
+                    </p>
+                    {console.log(props.linkText)}
+                    {props.linkText &&
+                        <p>
+                            <a href={props.link} target="_blank">{props.linkText}</a>
+                        </p>
+                    }
+                </motion.div>
+                <motion.div className={styles["card-image"]}>
+                    {props.image}
+                </motion.div>
             </motion.div>
         </motion.div>
     )

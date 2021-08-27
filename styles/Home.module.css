@@ -41,6 +41,10 @@
     flex-direction: row;
 }
 
+.about_box {
+    flex-direction: row-reverse;
+}
+
 .vline {
     border: 2px solid black;
     height: 50%;
@@ -90,4 +94,12 @@
     padding-bottom: 50px;
     text-align: center;
     font-size: 50px;
+}
+
+
+.footer {
+    height: 20vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: black;
 }

@@ -62,15 +62,15 @@ export const About = () => {
             animate={controls}
             className={styles.children}
         >
-            <motion.div variants={stagger} className={styles.about_lang_box}>
+            <motion.div variants={stagger} className={`${styles.about_lang_box} ${styles.about_box}`}>
+                <motion.div className={styles.about__right} variants={fadeInLeft}>
+                    <p className={styles.sub}>About</p>
+                </motion.div>
+                <motion.div className={styles.vline} ref={ref} />
                 <motion.div className={styles.about__left} variants={fadeInRight}>
                     {aboutMeText.map((e, i) => (
                         <p key={i}>{e}</p>
                     ))}
-                </motion.div>
-                <motion.div className={styles.vline} ref={ref} />
-                <motion.div className={styles.about__right} variants={fadeInLeft}>
-                    <p className={styles.sub}>About</p>
                 </motion.div>
             </motion.div>
         </motion.div>
