@@ -1,5 +1,4 @@
 import { motion } from "framer-motion"
-import Image from "next/image"
 import styles from '../styles/Carousel.module.css'
 import { Card } from "./Card"
 import React from "react"
@@ -29,7 +28,7 @@ export const Carousel = props => {
                 initial="rest"
                 whileHover="hover"
             >
-                <Image src="/left.svg" width="100%" height="100%" />
+                <img src="/left.svg" width="100%" height="100%" />
             </motion.div>
             <motion.div className={styles["carousel__track-container"]}>
                 <Card title={props.data[id].title} body={props.data[id].body} link={props.data[id].link} linkText={props.data[id].linkText} key={id} dir={dir} />
@@ -44,7 +43,7 @@ export const Carousel = props => {
                 initial="rest"
                 whileHover="hover"
             >
-                <Image src="/right.svg" width="100%" height="100%" />
+                <img src="/right.svg" width="100%" height="100%" />
             </motion.div>
         </motion.div>
     )
