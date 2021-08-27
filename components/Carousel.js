@@ -28,7 +28,7 @@ export const Carousel = props => {
                 initial="rest"
                 whileHover="hover"
             >
-                <img src="/left.svg" width="100px" height="100px" />
+                <img src="/portfolio/left.svg" width="100px" height="100px" />
             </motion.div>
             <motion.div className={styles["carousel__track-container"]}>
                 <Card title={props.data[id].title} body={props.data[id].body} link={props.data[id].link} linkText={props.data[id].linkText} key={id} dir={dir} />
@@ -43,7 +43,7 @@ export const Carousel = props => {
                 initial="rest"
                 whileHover="hover"
             >
-                <img src="/right.svg" width="100px" height="100px" />
+                <img src="/portfolio/right.svg" width="100px" height="100px" />
             </motion.div>
         </motion.div>
     )

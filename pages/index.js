@@ -1,10 +1,10 @@
-import { Title } from './components/Title'
-import { About } from './components/About'
-import { Languages } from './components/Languages'
+import { Title } from '../components/Title'
+import { About } from '../components/About'
+import { Languages } from '../components/Languages'
 import React from 'react'
-import { Projects } from './components/Projects'
+import { Projects } from '../components/Projects'
 import styles from '../styles/Home.module.css'
-import { hobbyData, workData } from "./components/data";
+import { hobbyData, workData } from "../components/data";
 
 export default function Home() {
     return (
