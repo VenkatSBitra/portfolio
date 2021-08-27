@@ -26,7 +26,7 @@ export const Card = props => {
                     }
                 </motion.div>
                 <motion.div className={styles["card-image"]}>
-                    {props.image}
+                    <img src={'/portfolio' + props.image} alt={"for " + props.title} />
                 </motion.div>
             </motion.div>
         </motion.div>

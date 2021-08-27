@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url('../public/background2.jpeg');
+    background-image: url('../public/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -19,8 +19,9 @@
 }
 
 .title p.name {
-    font-size: 60px;
+    font-size: 80px;
     color: white;
+    padding-bottom: 10vh;
 }
 
 .title p.sub {
@@ -98,8 +99,12 @@
 
 
 .footer {
-    height: 20vh;
+    height: 5vh;
     width: 100vw;
     max-width: 100%;
     background-color: black;
+    color: white;
+    font-size: 30px;
+    direction: rtl;
+    padding-right: 20px;
 }

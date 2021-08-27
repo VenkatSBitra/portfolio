@@ -31,7 +31,14 @@ export const Carousel = props => {
                 <img src="/portfolio/left.svg" width="100px" height="100px" />
             </motion.div>
             <motion.div className={styles["carousel__track-container"]}>
-                <Card title={props.data[id].title} body={props.data[id].body} link={props.data[id].link} linkText={props.data[id].linkText} key={id} dir={dir} />
+                <Card 
+                    title={props.data[id].title} 
+                    body={props.data[id].body} 
+                    link={props.data[id].link} 
+                    linkText={props.data[id].linkText} 
+                    image={props.data[id].image} 
+                    key={id} dir={dir} 
+                />
             </motion.div>
             <motion.div 
                 className={`${styles["carousel__button"]} ${styles["carousel__button--right"]}`}

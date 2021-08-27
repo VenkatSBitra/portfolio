@@ -19,10 +19,10 @@ export default function Home() {
                 <Languages />
             </section>
             <section>
-                <Projects title="Hobby Projects" data={hobbyData} />
+                <Projects title="Scientific Projects" data={workData} />
             </section>
             <section>
-                <Projects title="Work Projects" data={workData} />
+                <Projects title="Hobby Projects" data={hobbyData} />
             </section>
             <section>
                 <div className={styles.footer}>
