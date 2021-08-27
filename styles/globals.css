@@ -1,16 +1,24 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-snap-type: y mandatory;
+  padding: 0;
+  margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+html {
+  overflow-x: hidden;
+}
+
+section {
+  scroll-snap-align: start;
 }
 
 * {
   box-sizing: border-box;
+}
+
+section {
+  height: 100%;
 }
