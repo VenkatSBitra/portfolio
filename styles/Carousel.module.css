@@ -5,9 +5,17 @@
     margin: 0 auto;
 }
 
+.win .carousel {
+    height: 450px;
+}
+
 .carousel__track-container {
     background: transparent;
     padding: 10px;
+}
+
+.win .carousel__track-container {
+    padding: 7.5px;
 }
 
 .carousel__button {
@@ -21,9 +29,17 @@
 }
 
 .carousel__button--left {
-    left: -150px
+    left: -150px;
+}
+
+.win .carousel__button--left {
+    left: -112.5px;
 }
 
 .carousel__button--right {
     right: -150px;
+}
+
+.win .carousel__button--right {
+    right: -112.5px;
 }

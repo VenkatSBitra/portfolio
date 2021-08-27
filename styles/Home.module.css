@@ -24,9 +24,17 @@
     padding-bottom: 10vh;
 }
 
+.win .title p.name {
+    font-size: 60px;
+}
+
 .title p.sub {
     font-size: 45px;
     color: white;
+}
+
+.win .title p.sub {
+    font-size: 33.75px;
 }
 
 .about_lang_box {
@@ -42,6 +50,11 @@
     flex-direction: row;
 }
 
+.win .about_lang_box {
+    margin: 0px 30px;
+    padding: 0px 22.5px;
+}
+
 .about_box {
     flex-direction: row-reverse;
 }
@@ -53,6 +66,11 @@
     margin-right: 5px;
 }
 
+.win .vline {
+    margin-left: 3.75px;
+    margin-right: 3.75px;
+}
+
 .about__left {
     font-size: 30px;
     width: 65%;
@@ -60,9 +78,17 @@
     line-height: 1.5;
 }
 
+.win .about__left {
+    font-size: 22.5px;
+}
+
 .about__right {
     font-size: 60px;
     width: 35%
+}
+
+.win .about__right {
+    font-size: 45px;
 }
 
 .lang__left {
@@ -70,15 +96,27 @@
     width: 34%;
 }
 
+.win .lang__left {
+    font-size: 45px;
+}
+
 .lang__right {
     font-size: 25px;
     width: 66%;
+}
+
+.win .lang__right {
+    font-size: 18.75px;
 }
 
 .lang__right__ele {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 10px;
+}
+
+.win .lang__right__ele {
+    padding: 7.5px;
 }
 
 .hobby-proj-region {
@@ -97,6 +135,12 @@
     font-size: 50px;
 }
 
+.win .hobby-proj-title {
+    margin-bottom: 15px;
+    padding-bottom: 37.5px;
+    font-size: 37.5px;
+}
+
 
 .footer {
     height: 5vh;
@@ -107,4 +151,9 @@
     font-size: 30px;
     direction: rtl;
     padding-right: 20px;
+}
+
+.win .footer {
+    font-size: 22.5px;
+    padding-right: 15px;
 }

@@ -11,14 +11,15 @@ export const Card = props => {
             exit={{ opacity: 0 }}
         >
             <motion.div className={styles["card-title"]}>
-                {props.title}
+                <motion.div>
+                    {props.title}  
+                </motion.div>
             </motion.div>
             <motion.div className={styles["card-body"]}>
                 <motion.div className={styles["card-body-content"]}>
                     <p>
                         {props.body}
                     </p>
-                    {console.log(props.linkText)}
                     {props.linkText &&
                         <p>
                             <a href={props.link} rel="noreferrer" target="_blank">{props.linkText}</a>
